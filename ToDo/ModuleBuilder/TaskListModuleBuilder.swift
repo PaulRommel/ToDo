@@ -8,6 +8,8 @@
 import UIKit
 
 enum TaskListModuleBuilder {
+    static var sharedInteractor: TaskListInteractorProtocol?
+
     static func build() -> UIViewController {
         let view = TaskListViewController()
         let presenter = TaskListPresenter()
@@ -15,13 +17,14 @@ enum TaskListModuleBuilder {
         let router = TaskListRouter()
 
         view.presenter = presenter
-
         presenter.view = view
         presenter.interactor = interactor
         presenter.router = router
 
         interactor.output = presenter
         router.viewController = view
+
+        sharedInteractor = interactor
 
         return view
     }
