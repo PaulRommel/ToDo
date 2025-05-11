@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A040D2872DD0F584002C49B1 /* TaskListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040D2852DD0F541002C49B1 /* TaskListInteractorTests.swift */; };
+		A040D2892DD0F5A6002C49B1 /* TaskListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040D2882DD0F5A6002C49B1 /* TaskListPresenterTests.swift */; };
+		A040D28B2DD0F5D6002C49B1 /* TaskDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040D28A2DD0F5D6002C49B1 /* TaskDetailPresenterTests.swift */; };
+		A040D28D2DD0F5FA002C49B1 /* TaskListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040D28C2DD0F5FA002C49B1 /* TaskListRouterTests.swift */; };
 		A0494E512DC3E748007632A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0494E502DC3E748007632A5 /* AppDelegate.swift */; };
 		A0494E532DC3E748007632A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0494E522DC3E748007632A5 /* SceneDelegate.swift */; };
 		A0494E5B2DC3E749007632A5 /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0494E592DC3E749007632A5 /* ToDo.xcdatamodeld */; };
 		A0494E5D2DC3E74B007632A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0494E5C2DC3E74B007632A5 /* Assets.xcassets */; };
 		A0494E602DC3E74B007632A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0494E5E2DC3E74B007632A5 /* LaunchScreen.storyboard */; };
-		A0494E6B2DC3E74B007632A5 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0494E6A2DC3E74B007632A5 /* ToDoTests.swift */; };
 		A0494E752DC3E74C007632A5 /* ToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0494E742DC3E74C007632A5 /* ToDoUITests.swift */; };
 		A0494E772DC3E74C007632A5 /* ToDoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0494E762DC3E74C007632A5 /* ToDoUITestsLaunchTests.swift */; };
 		A05E95CB2DCB9A5100153C05 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05E95CA2DCB9A5100153C05 /* Task.swift */; };
@@ -46,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A040D2852DD0F541002C49B1 /* TaskListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListInteractorTests.swift; sourceTree = "<group>"; };
+		A040D2882DD0F5A6002C49B1 /* TaskListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListPresenterTests.swift; sourceTree = "<group>"; };
+		A040D28A2DD0F5D6002C49B1 /* TaskDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailPresenterTests.swift; sourceTree = "<group>"; };
+		A040D28C2DD0F5FA002C49B1 /* TaskListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRouterTests.swift; sourceTree = "<group>"; };
 		A0494E4D2DC3E748007632A5 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0494E502DC3E748007632A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0494E522DC3E748007632A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +61,6 @@
 		A0494E5F2DC3E74B007632A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0494E612DC3E74B007632A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0494E662DC3E74B007632A5 /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0494E6A2DC3E74B007632A5 /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
 		A0494E702DC3E74C007632A5 /* ToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0494E742DC3E74C007632A5 /* ToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITests.swift; sourceTree = "<group>"; };
 		A0494E762DC3E74C007632A5 /* ToDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -138,7 +144,10 @@
 		A0494E692DC3E74B007632A5 /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0494E6A2DC3E74B007632A5 /* ToDoTests.swift */,
+				A040D2852DD0F541002C49B1 /* TaskListInteractorTests.swift */,
+				A040D2882DD0F5A6002C49B1 /* TaskListPresenterTests.swift */,
+				A040D28A2DD0F5D6002C49B1 /* TaskDetailPresenterTests.swift */,
+				A040D28C2DD0F5FA002C49B1 /* TaskListRouterTests.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -356,7 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0494E6B2DC3E74B007632A5 /* ToDoTests.swift in Sources */,
+				A040D28D2DD0F5FA002C49B1 /* TaskListRouterTests.swift in Sources */,
+				A040D2892DD0F5A6002C49B1 /* TaskListPresenterTests.swift in Sources */,
+				A040D28B2DD0F5D6002C49B1 /* TaskDetailPresenterTests.swift in Sources */,
+				A040D2872DD0F584002C49B1 /* TaskListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

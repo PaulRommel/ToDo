@@ -31,8 +31,15 @@ protocol TaskListInteractorOutputProtocol: AnyObject {
 }
 
 class TaskListInteractor: TaskListInteractorInputProtocol {
+    
+#if DEBUG
+    func setContextForTesting(_ context: NSManagedObjectContext) {
+        self.context = context
+    }
+#endif
+    
     weak var presenter: TaskListInteractorOutputProtocol?
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private let apiUrl = "https://dummyjson.com/todos"
     private let hasLoadedKey = "hasLoadedFromAPI"
     
