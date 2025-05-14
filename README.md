@@ -1,4 +1,4 @@
-<img src="https://github.com/PaulRommel/ToDo/blob/main/demo/me.gif" width="250" height="450"/>
+<img src="https://github.com/PaulRommel/ToDo/blob/main/demo/me.gif" width="250" height="480"/>
 
 # ToDo List Application
 
