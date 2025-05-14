@@ -1,4 +1,4 @@
-![me](https://github.com/PaulRommel/ToDo/blob/main/demo/me.gif)
+<img src="https://github.com/PaulRommel/ToDo/blob/main/demo/me.gif" width="250" height="250"/>
 
 # ToDo List Application
 
