@@ -1,4 +1,4 @@
-/Users/pavelpopov/Desktop/Simulator Screen Recording - iPhone 14 Pro - 2025-05-13 at 21.09.37.mp4
+![me](https://github.com/PaulRommel/ToDo/blob/main/demo/me.gif)
 
 # ToDo List Application
 
