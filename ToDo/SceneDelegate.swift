@@ -12,16 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    lazy var persistentContainer: NSPersistentContainer = {
-            let container = NSPersistentContainer(name: "ToDo")
-            container.loadPersistentStores { description, error in
-                if let error = error {
-                    fatalError("Unable to load persistent stores: \(error)")
-                }
-            }
-            return container
-        }()
-    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
                 

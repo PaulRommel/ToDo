@@ -39,7 +39,12 @@ class TaskListInteractor: TaskListInteractorInputProtocol {
 #endif
     
     weak var presenter: TaskListInteractorOutputProtocol?
-    private var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private lazy var context: NSManagedObjectContext = {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            fatalError("Unable to access AppDelegate")
+        }
+        return appDelegate.persistentContainer.viewContext
+    }()
     private let apiUrl = "https://dummyjson.com/todos"
     private let hasLoadedKey = "hasLoadedFromAPI"
     
